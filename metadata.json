@@ -1,0 +1,7 @@
+{
+  "name": "Suare Coffee & Bowl",
+  "description": "Suadiye'de lezzetli bowl seçenekleri ve nitelikli kahve sunan, yapay zeka destekli websitesi.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
