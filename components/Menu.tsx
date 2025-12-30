@@ -97,7 +97,7 @@ const Menu: React.FC = () => {
           {/* Navigation Buttons */}
           <button
             onClick={() => scrollManual('left')}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -ml-3 md:-ml-6 z-10 bg-white/90 p-3 rounded-full shadow-lg text-coffee-900 opacity-0 group-hover/slider:opacity-100 transition-opacity disabled:opacity-0 hover:bg-white"
+            className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -ml-3 md:-ml-6 z-10 bg-white/90 p-3 rounded-full shadow-lg text-coffee-900 opacity-0 group-hover/slider:opacity-100 transition-opacity disabled:opacity-0 hover:bg-white"
             aria-label="Scroll Left"
           >
             <ChevronLeft size={24} />
@@ -105,7 +105,7 @@ const Menu: React.FC = () => {
 
           <button
             onClick={() => scrollManual('right')}
-            className="absolute right-0 top-1/2 -translate-y-1/2 -mr-3 md:-mr-6 z-10 bg-white/90 p-3 rounded-full shadow-lg text-coffee-900 opacity-0 group-hover/slider:opacity-100 transition-opacity disabled:opacity-0 hover:bg-white"
+            className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 -mr-3 md:-mr-6 z-10 bg-white/90 p-3 rounded-full shadow-lg text-coffee-900 opacity-0 group-hover/slider:opacity-100 transition-opacity disabled:opacity-0 hover:bg-white"
             aria-label="Scroll Right"
           >
             <ChevronRight size={24} />
@@ -117,7 +117,7 @@ const Menu: React.FC = () => {
               onScroll={handleScroll}
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
-              className="flex overflow-x-auto gap-6 pb-8 hide-scrollbar snap-x snap-mandatory"
+              className="flex overflow-x-auto gap-4 sm:gap-6 pb-8 hide-scrollbar snap-x snap-mandatory"
             >
               {displayItems.map((item, idx) => {
                 // Render View All Card
@@ -126,7 +126,7 @@ const Menu: React.FC = () => {
                     <Link
                       key={`view-all-${idx}`}
                       to="/menu"
-                      className="min-w-[150px] bg-coffee-100/50 rounded-2xl flex flex-col items-center justify-center snap-center flex-shrink-0 cursor-pointer hover:bg-coffee-200 transition-colors border-2 border-dashed border-coffee-300 text-coffee-700 gap-3 group"
+                      className="min-w-[70vw] sm:min-w-[180px] md:min-w-[200px] bg-coffee-100/50 rounded-2xl flex flex-col items-center justify-center snap-center flex-shrink-0 cursor-pointer hover:bg-coffee-200 transition-colors border-2 border-dashed border-coffee-300 text-coffee-700 gap-3 group"
                     >
                       <div className="p-4 bg-white rounded-full shadow-sm group-hover:scale-110 transition-transform">
                         <ArrowRight size={24} />
@@ -143,7 +143,7 @@ const Menu: React.FC = () => {
                   <Link
                     key={`prod-${idx}`}
                     to="/menu"
-                    className="min-w-[240px] sm:min-w-[260px] md:min-w-[320px] bg-white rounded-2xl shadow-lg shadow-coffee-100/50 overflow-hidden snap-center flex-shrink-0 group cursor-pointer border border-coffee-100 hover:border-coffee-300 transition-all"
+                    className="min-w-[80vw] sm:min-w-[260px] md:min-w-[320px] lg:min-w-[340px] bg-white rounded-2xl shadow-lg shadow-coffee-100/50 overflow-hidden snap-center flex-shrink-0 group cursor-pointer border border-coffee-100 hover:border-coffee-300 transition-all"
                   >
                     <div className="h-48 overflow-hidden relative">
                       {realItem.image && (

@@ -21,7 +21,7 @@ const FullMenu: React.FC = () => {
     <div className="bg-white min-h-screen">
       <div className="flex flex-col min-h-screen">
         {/* Page Header */}
-        <div className="flex-shrink-0 bg-white border-b border-coffee-100 px-6 py-4 flex justify-between items-center shadow-sm">
+        <div className="flex-shrink-0 bg-white border-b border-coffee-100 px-4 sm:px-6 py-4 flex justify-between items-center shadow-sm">
           <div>
             <h1 className="font-serif font-bold text-2xl md:text-3xl text-coffee-900">Suare Menü</h1>
             <p className="text-xs text-coffee-500">
@@ -37,7 +37,7 @@ const FullMenu: React.FC = () => {
         </div>
 
         {/* Categories Tab Navigation (Sticky) */}
-        <div className="flex-shrink-0 bg-coffee-50 px-6 py-3 flex gap-3 overflow-x-auto hide-scrollbar border-b border-coffee-100 sticky top-0 z-10">
+        <div className="flex-shrink-0 bg-coffee-50 px-4 sm:px-6 py-3 flex gap-3 overflow-x-auto hide-scrollbar border-b border-coffee-100 sticky top-0 z-10">
           {allCategories.map((cat) => (
             <button
               key={cat.id}
@@ -51,7 +51,7 @@ const FullMenu: React.FC = () => {
         </div>
 
         {/* Menu Content (Scrollable) */}
-        <div className="flex-1 overflow-y-auto bg-white p-6 pb-20">
+        <div className="flex-1 overflow-y-auto bg-white px-4 sm:px-6 pb-20 pt-6">
           <div className="max-w-3xl mx-auto space-y-16">
             {allCategories.map((category) => (
               <div key={category.id} id={`menu-cat-${category.id}`} className="scroll-mt-32">
