@@ -3,8 +3,8 @@ import { Coffee, Utensils, Heart } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-24 bg-white relative">
-      <div className="container mx-auto px-6">
+    <section id="about" className="py-20 md:py-24 bg-white relative">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10">
             <span className="text-coffee-500 font-bold tracking-widest text-sm uppercase mb-3 block">Hakkımızda</span>

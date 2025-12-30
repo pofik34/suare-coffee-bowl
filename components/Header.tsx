@@ -41,7 +41,7 @@ const Header: React.FC = () => {
         isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-6'
       }`}
     >
-      <div className="container mx-auto px-6 flex justify-between items-center">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         {/* Logo */}
         <a 
           href="/" 

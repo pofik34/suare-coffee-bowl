@@ -3,8 +3,8 @@ import { MapPin, Clock, Phone, Instagram } from 'lucide-react';
 
 const Location: React.FC = () => {
   return (
-    <section id="location" className="bg-coffee-900 text-coffee-100 py-20 relative overflow-hidden">
-      <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section id="location" className="bg-coffee-900 text-coffee-100 py-20 md:py-24 relative overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         
         {/* Info Column */}
         <div>
@@ -95,7 +95,7 @@ const Location: React.FC = () => {
 
       </div>
 
-      <div className="container mx-auto px-6 mt-20 pt-8 border-t border-white/10 text-center text-coffee-400 text-sm">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-16 md:mt-20 pt-8 border-t border-white/10 text-center text-coffee-400 text-sm">
         <p>&copy; {new Date().getFullYear()} Suare Coffee. Tüm hakları saklıdır.</p>
       </div>
     </section>

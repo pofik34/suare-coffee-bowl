@@ -16,73 +16,73 @@ const Gallery: React.FC = () => {
   const images = [
     {
       src: photo1,
-      alt: "Suare Coffee",
-      className: "md:col-span-2 md:row-span-2 h-96 md:h-[500px]"
+      alt: 'Suare Coffee',
+      className: 'md:col-span-2 md:row-span-2 h-96 md:h-[500px]',
     },
     {
       src: photo2,
-      alt: "Suare Coffee", 
-      className: "h-64 md:h-[240px]"
+      alt: 'Suare Coffee',
+      className: 'h-64 md:h-[240px]',
     },
     {
       src: photo3,
-      alt: "Suare Coffee", 
-      className: "h-64 md:h-[240px]"
+      alt: 'Suare Coffee',
+      className: 'h-64 md:h-[240px]',
     },
     {
       src: photo4,
-      alt: "Suare Coffee",
-      className: "h-64 md:h-[240px]"
+      alt: 'Suare Coffee',
+      className: 'h-64 md:h-[240px]',
     },
     {
       src: photo5,
-      alt: "Suare Coffee", 
-      className: "h-64 md:h-[240px]"
+      alt: 'Suare Coffee',
+      className: 'h-64 md:h-[240px]',
     },
     {
       src: photo6,
-      alt: "Suare Coffee",
-      className: "h-64 md:h-[240px]"
+      alt: 'Suare Coffee',
+      className: 'h-64 md:h-[240px]',
     },
     {
       src: photo7,
-      alt: "Suare Coffee",
-      className: "h-64 md:h-[240px]"
+      alt: 'Suare Coffee',
+      className: 'h-64 md:h-[240px]',
     },
     {
       src: photo8,
-      alt: "Suare Coffee",
-      className: "h-64 md:h-[240px]"
+      alt: 'Suare Coffee',
+      className: 'h-64 md:h-[240px]',
     },
     {
       src: photo9,
-      alt: "Suare Coffee",
-      className: "h-64 md:h-[240px]"
+      alt: 'Suare Coffee',
+      className: 'h-64 md:h-[240px]',
     },
     {
       src: photo10,
-      alt: "Suare Coffee",
-      className: "h-64 md:h-[240px]"
-    }
+      alt: 'Suare Coffee',
+      className: 'h-64 md:h-[240px]',
+    },
   ];
 
   return (
-    <section id="gallery" className="py-24 bg-white">
-      <div className="container mx-auto px-6">
+    <section id="gallery" className="py-20 md:py-24 bg-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12">
           <div>
             <h2 className="text-4xl md:text-5xl font-serif text-coffee-900 mb-4">Galeri</h2>
             <p className="text-coffee-600 max-w-md font-light">
-              Suare'den kareler: Lezzetli sunumlar, sıcak detaylar ve sizden gelenler.
+              Suare&apos;den kareler: Lezzetli sunumlar, sıcak detaylar ve sizden gelenler.
             </p>
           </div>
-          <a 
-            href="https://www.instagram.com/suarecoffee/" 
-            target="_blank" 
+          <a
+            href="https://www.instagram.com/suarecoffee/"
+            target="_blank"
             rel="noopener noreferrer"
             className="hidden md:inline-flex items-center text-coffee-600 hover:text-coffee-900 transition-colors font-medium mt-4 md:mt-0"
           >
-            Instagram'da Takip Et →
+            Instagram&apos;da Takip Et →
           </a>
         </div>
 
@@ -95,18 +95,18 @@ const Gallery: React.FC = () => {
                 className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                 <span className="text-white/80 font-serif tracking-widest text-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
-                   SUARE
-                 </span>
+                <span className="text-white/80 font-serif tracking-widest text-sm opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                  SUARE
+                </span>
               </div>
             </div>
           ))}
         </div>
-        
+
         <div className="mt-8 text-center md:hidden">
-          <a 
-            href="https://www.instagram.com/suarecoffee/" 
-            target="_blank" 
+          <a
+            href="https://www.instagram.com/suarecoffee/"
+            target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center text-coffee-600 font-medium"
           >
@@ -119,3 +119,5 @@ const Gallery: React.FC = () => {
 };
 
 export default Gallery;
+
+

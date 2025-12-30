@@ -30,7 +30,7 @@ const Testimonials: React.FC = () => {
        {/* Decorative */}
        <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-white to-transparent opacity-50" />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-serif text-coffee-900 mb-3">Misafirlerimizden Yorumlar</h2>
           <p className="text-coffee-500 text-sm mb-5 font-light">

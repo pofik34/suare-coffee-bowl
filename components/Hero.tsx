@@ -15,22 +15,19 @@ const Hero: React.FC = () => {
     <section id="hero" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
-          src={heroImage}
-          alt="Suare Coffee Ambience"
-          className="w-full h-full object-cover"
-        />
+        <img src={heroImage} alt="Suare Coffee Ambience" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/40 mix-blend-multiply" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/40" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto mt-16">
+      <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto mt-20 md:mt-16">
         <span className="block text-coffee-100 tracking-[0.2em] text-sm md:text-base font-medium mb-4 animate-fade-in-up border-b border-white/20 pb-2 inline-block">
           GÜNÜN EN KEYİFLİ BULUŞMASI
         </span>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white mb-6 leading-tight tracking-tight shadow-sm">
-          Suare<br />
+          Suare
+          <br />
           <span className="text-coffee-200">Coffee & Bowl</span>
         </h1>
         <p className="text-white/90 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light leading-relaxed">
@@ -64,3 +61,5 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
+
+
